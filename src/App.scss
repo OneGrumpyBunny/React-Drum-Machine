@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan');
+
+$mainColor: #455A64;
+$darkAccent: #FF5722;
+$lightAccent: #CFD8DC;
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  height: 60%;
+  width: 90%;
+  background: url('http://www.cherylvelez.com/play/drum-back.jpg') no-repeat;
+  background-size: cover;
+  margin: 10% auto;
+  border: 1px solid $darkAccent;
+  border-radius:20px;
+  max-width: 900px;
+}
+
+#display {
+  display:inline-block;
+}
+
+p {
+  text-align:center;
+  font-weight: bold;
+  background: rgba(255,255,255,.7);
+  padding: .5rem;
+}
+.Header {
+  text-align: center;
+  h1 {
+    color:$mainColor;
+  }
+  p {
+    color: $darkAccent;
+  }
+}
+
+.Drumbox {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  height: 100%;
+  .drum-pad {
+    width: 22%;
+    margin: 1rem;
+    padding: 4rem 0;
+    text-align: center;
+    color: $darkAccent;
+    background-color: $lightAccent;
+    border-radius: 37%;
+    font-size: x-large;
+    font-weight: bolder;
+    border: 1px solid $mainColor;
+    box-shadow: 5px 4px 17px 1px $mainColor;
+    cursor:pointer;   
+  }
+  .activate {
+    animation: .5s activateDrumPad;
+  }
+}
+
+@keyframes activateDrumPad {
+  50% {
+    background-color: #FF5722;
+    color: #CFD8DC;
+    box-shadow: -1px -1px 17px 1px #455A64;
+    transform: translateY(4px);
+  }
+}
+@media screen and (max-width: 650px) {
+  .wrapper {
+  height: 60%;
+  width: 90%;
+  }
+  .Drumbox {
+    .drum-pad {
+    width: 36%;
+    }
+  }
+}
