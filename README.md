@@ -3,6 +3,7 @@ Free Code Camp Front End Libraries Challenge - JavaScript Drum Machine
 See the live drum machine here: 
 [JavaScript Drum Machine on CodePen](https://codepen.io/onegrumpybunny/full/VwLWQPp)
 
+<img src="src/drum.PNG" width="600" height="auto">
 -------------------------------------------------------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
